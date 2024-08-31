@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Welcome to Chess Club Rankings</h1>
+    <p>This website allows you to view player rankings, game history, and player profiles for our local chess club.</p>
+    <h2>Quick Links</h2>
+    <ul>
+        <li><a href="{{ url_for('main.rankings') }}">View Rankings</a></li>
+        <li><a href="{{ url_for('main.game_history') }}">View Game History</a></li>
+    </ul>
+{% endblock %}

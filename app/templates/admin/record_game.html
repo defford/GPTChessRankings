@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Record Game</h1>
+    <form method="post">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.player1.label }}<br>
+            {{ form.player1() }}
+        </p>
+        <p>
+            {{ form.player2.label }}<br>
+            {{ form.player2() }}
+        </p>
+        <p>
+            {{ form.winner.label }}<br>
+            {{ form.winner() }}
+        </p>
+        <p>
+            {{ form.date.label }}<br>
+            {{ form.date() }}
+        </p>
+        <p>{{ form.submit() }}</p>
+    </form>
+{% endblock %}

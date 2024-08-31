@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Admin Dashboard</h1>
+    <ul>
+        <li><a href="{{ url_for('auth.manage_players') }}">Manage Players</a></li>
+        <li><a href="{{ url_for('auth.record_game') }}">Record Game</a></li>
+    </ul>
+{% endblock %}
